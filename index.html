@@ -1,19 +1,64 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="UTF-8">
+<head>
+    <meta charset="UTF-8">
     <title>index.html</title>
     <style>
         body {
-            background-color: #ffffff;
-            color: #000000;
+            background-color: #161515;
+            color: #ffffff;
             font-family: Arial, sans-serif;
             text-align: center;
         }
     </style>
-    <h1>アップデート中</h1>
-    <h2>申し訳ございませんただいまアップデート中ですのでサイトはご利用出来ません</h2>
 </head>
 <body>
-    </head>
+    <h1>初めてのWEBサイトへようこそ!!</h1>
+    <h3>代表者挨拶</h3>
+    <p>こんにちは、このWEBサイトは僕が初めて作ったWEBサイトです。<br>
+        シンプルですが、これからどんどん改良していきますので、よろしくお願いします。<br>
+        勿論広告はありません!!</p>
+
+    <h2>初めてのWEBサイトの活動記録!!</h2>
+    <ul>
+        <li>背景色を黒にしました！</li>
+        <li>初めてのWEBサイトを設立しました!!</li>
+    </ul>
+
+    <h2>アンケート実施!!（実施期間6月4日〜〜6月12日23:59まで）</h2>
+    <button onclick="window.location.href='https://docs.google.com/forms/d/e/1FAIpQLSd6FTRJ1oAs6rWLcFDRrrsJ4d7VSczy27zN67_d-aHEIvxQVg/viewform?usp=dialog'">アンケートに協力!！（お願いします）</button>
+
+    <h1>初めてのWEBサイトへログイン</h1>
+    <p>ユーザー名（ログインID）</p>
+    <input type="text" id="username">
+    <p>パスワード</p>
+    <input type="password" id="password">
+    <button onclick="login()">ログイン（Sign up）</button>
+
+    <h4>利用規約</h4>
+    <p>初めてのWEBサイトのホームページを利用するにあたり、以下の利用規約に同意していただく必要があります。<br>
+        １ログインをするという事は、利用規約に同意したことになります。<br>
+        ２初めてのWEBサイトを無断で転載する事は禁止されています。<br>
+        ３ユーザー名とパスワードは、初めてのWEBサイトの会員にのみお知らせします。<br>
+    </p>
+
+    <p style="color:#fc0303;">追記：このサイトは簡易的なサイトです。予告無く変更または閉鎖、消去する場合があります。誠に勝手ながらご理解ください。</p>
+
+    <script>
+        function login() {
+            var username = document.getElementById("username").value;
+            var password = document.getElementById("password").value;
+            if (username === "hatsudayo" && password === "3935") {
+                alert("ログイン成功！ 初めてのWEBサイトへようこそ！");
+                 window.location.href = "https://omusubi39.github.io/my-kain/";
+            } else {
+                alert("ログイン失敗！ユーザー名またはパスワードが間違っています。");
+            }
+        }
+    </script>
+    <h4>フィードバックを送信</h4>
+    <button onclick="window.location.href='https://docs.google.com/forms/d/e/1FAIpQLSe-Ck46CT6tES8jGr2NpioEPqJCyGopIlHD2Iq6-XaecE6uAg/viewform?usp=dialog'">フィードバックを送信</button>
+</body>
 </html>
+<body>
+
